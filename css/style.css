@@ -1,0 +1,918 @@
+/*
+	
+	Theme: Penny;
+	Author: Michael Chan;
+	Date of Creation: Mon, August 4, 2025;
+	Colors: Flat UI, Swedish Palette;
+
+*/
+
+/* all pages */
+	*
+	{
+		font-family: Calibri;
+		font-size: 13px;
+		box-sizing: border-box;
+	}
+/* all pages end */
+
+/* header */
+	.header
+	{
+		background-color: white;
+		color: #3c40c6;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		position: fixed;
+		z-index: 3;
+		width: 100%;
+	}
+
+	header
+	{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	header a
+	{
+		text-decoration: none;
+		color: inherit;
+	}
+
+	header a .logo
+	{
+		height: 80px;
+		display: flex;
+		align-items: center;
+		gap: 20px;
+	}
+
+	header a .logo img
+	{
+		height: 60px;
+		object-fit: cover;
+	}
+
+	header a .logo span
+	{
+		font-size: 2rem;
+		font-weight: 800;
+		text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+	}
+
+	header a .logo span:hover
+	{
+		color: black;
+	}
+
+	header nav
+	{
+		display: flex;
+		align-items: center;
+	}
+
+	header nav a
+	{
+		font-size: 1.4rem;
+		margin-right: 50px;
+		font-weight: 600;
+	}
+
+	header nav a:hover
+	{
+		color: black;
+	}
+
+	.checkbtn
+	{
+		color: #3c40c6;
+		cursor: pointer;
+		display: none;
+	}
+
+	.checkbtn i
+	{
+		font-size: 30px;
+	}
+
+	#check
+	{
+		display: none;
+	}
+/* header ends */
+
+/* banner */
+	.banner-container
+	{
+		position: relative;
+		width: 100%;
+		min-height: 80vh;
+		overflow: visible;
+	}
+
+	.banner
+	{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-size: cover;
+		background-position: center;
+		opacity: 0;
+		transition: opacity 1s ease-in-out;
+		z-index: 0;
+	}
+
+	.banner.active
+	{
+		opacity: 1;
+		z-index: 1;
+	}
+
+	.banner::before
+	{
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.2);
+		z-index: 1;
+	}
+
+	.banner-content
+	{
+		color: white;
+		position: relative;
+		padding: 250px;
+		z-index: 2;
+		text-align: center;
+	}
+
+	.banner-content h1
+	{
+		text-align: center;
+		font-size: 5rem;
+		font-weight: 800;
+		text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+	}
+
+	.banner-content h2
+	{
+		text-align: center;
+		font-size: 5rem;
+		font-weight: 800;
+		text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+	}
+
+	.banner-content button
+	{
+		padding: 6px 12px;
+		border: none;
+		background-color: #3c40c6;
+		color: white;
+		cursor: pointer;
+		border-radius: 5px;
+	}
+/* banner ends */
+
+/* semi banner */
+	.semi-banner
+	{
+		padding: 50px;
+		background-image: url("../images/semi-banner-2.jpg");
+		background-size: cover;
+		background-position: center;
+		color: white;
+		text-align: center;
+		position: relative;
+	}
+
+	.semi-banner::before
+	{
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.7);
+		z-index: 1;
+	}
+
+	.semi-banner-text
+	{
+		position: relative;
+		z-index: 2;
+	}
+
+	.semi-banner-text h1
+	{
+		font-size: 2.2rem;
+		font-weight: 600;
+		text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+	}
+
+	.semi-banner-text p
+	{
+		font-size: 1.2rem;
+	}
+
+	.semi-banner-text button
+	{
+		padding: 6px 12px;
+		border: none;
+		background-color: #3c40c6;
+		color: white;
+		cursor: pointer;
+		border-radius: 5px;
+	}
+/* semi banner ends */
+
+/* why me */
+	.why-me
+	{
+		padding: 50px;
+	}
+
+	.why-me-header
+	{
+		font-size: 2rem;
+		font-weight: 600;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+	.why-me-container
+	{
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 50px;
+	}
+
+	.why-me-box
+	{
+		border: 2px solid #3c40c6;
+		border-radius: 13px;
+		padding: 13px;
+	}
+
+	.why-me-box .box-title
+	{
+		font-size: 1.2rem;
+	}
+
+	.why-me-btn
+	{
+		padding: 6px 12px;
+		border: none;
+		border-radius: 5px;
+		background-color: #3c40c6;
+		color: white;
+		margin-top: 20px;
+	}
+/* why me ends */
+
+/* team */
+	.team
+	{
+		padding: 50px;
+		background-color: #3c40c6;
+		color: white;
+	}
+
+	.team-container
+	{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 20px;
+	}
+
+	.team-box
+	{
+		display: flex;
+		align-items: center;
+		gap: 20px;
+	}
+
+	.team-box img
+	{
+		width: 200px;
+		object-fit: cover;
+		border-radius: 13px;
+	}
+
+	.box-one-text span.name
+	{
+		font-size: 2rem;
+		font-weight: 600;
+		text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+	}
+
+	.box-one-text span.desc
+	{
+		font-size: 1.5rem;
+		font-weight: 600;
+		text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+	}
+
+	.box-two-text
+	{
+		font-size: 3rem;
+		font-weight: 800;
+		text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+	}
+/* team ends */
+
+/* footer */
+	.footer
+	{
+		background-color: #1e272e;
+		color: white;
+		padding: 50px;
+	}
+
+	.footer-container
+	{
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 50px;
+	}
+
+	.footer-box.fb-1
+	{
+		font-size: 1.5rem;
+		font-weight: 600;
+	}
+
+	.footer-title
+	{
+		font-size: 1.5rem;
+		font-weight: 600;
+		margin-bottom: 20px;
+	}
+
+	.footer-box span a
+	{
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		text-decoration: none;
+		color: inherit;
+		font-size: 1.2rem;
+	}
+
+	.footer-box span a img
+	{
+		height: 30px;
+		width: 30px;
+		object-fit: cover;
+	}
+
+	.footer-box.fb-3 span
+	{
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		font-size: 1.2rem;
+	}
+
+	.footer-box.fb-3 span img
+	{
+		height: 30px;
+		width: 30px;
+		object-fit: cover;
+	}
+
+	footer p
+	{
+		text-align: center;
+	}
+/* footer ends */
+
+/* about page */
+	.about
+	{
+		padding: 100px;
+	}
+
+	.about-header
+	{
+		text-align: center;
+		font-size: 2rem;
+		font-weight: 600;
+		border-bottom: 5px solid #3c40c6;
+		width: fit-content;
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+
+	.mission-container
+	{
+		display: flex;
+		align-items: center;
+		gap: 50px;
+		margin-bottom: 50px;
+	}
+
+	.mission-container img
+	{
+		width: 300px;
+		object-fit: cover;
+		border-radius: 13px;
+	}
+
+	.mission-text
+	{
+		font-size: 1.2rem;
+	}
+
+	.mission-text li
+	{
+		font-size: 1.2rem;
+	}
+
+	.mission-text span
+	{
+		font-size: 2rem;
+		font-weight: 600;
+		margin-bottom: 20px;
+	}
+
+	.vision-container
+	{
+		display: flex;
+		align-items: center;
+		gap: 50px;
+	}
+
+	.vision-container img
+	{
+		width: 300px;
+		object-fit: cover;
+		border-radius: 13px;
+	}
+
+	.vision-text
+	{
+		font-size: 1.2rem;
+	}
+
+	.vision-text li
+	{
+		font-size: 1.2rem;
+	}
+
+	.vision-text li span.vt-ul
+	{
+		font-size: 1.2rem;
+		font-weight: 500;
+	}
+
+	.vision-text span
+	{
+		font-size: 2rem;
+		font-weight: 600;
+		margin-bottom: 20px;
+	}
+/* about page ends */
+
+/* executive coaching page */
+	.executive-coaching
+	{
+		padding: 100px;
+	}
+
+	.executive-coaching-header
+	{
+		text-align: center;
+		font-size: 2rem;
+		font-weight: 600;
+		border-bottom: 5px solid #3c40c6;
+		width: fit-content;
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+
+	.executive-container
+	{
+		display: flex;
+		align-items: center;
+		gap: 50px;
+	}
+
+	.executive-container img
+	{
+		width: 400px;
+		object-fit: cover;
+		border-radius: 13px;
+	}
+
+	.executive-container-text span
+	{
+		font-size: 2rem;
+		font-weight: 600;
+	}
+
+	.executive-container-text li
+	{
+		font-size: 1.2rem;
+		margin-bottom: 10px;
+	}
+
+	.executive-container-text li span
+	{
+		font-size: 1.2rem;
+	}
+
+	.pre-footer
+	{
+		padding: 50px;
+		background-color: #3c40c6;
+		color: white;
+	}
+
+	.pre-footer-text
+	{
+		font-size: 3rem;
+		font-weight: 600;
+		text-align: center;
+		text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+	}
+/* executive coaching page ends */
+
+/* contact page */
+	.contact
+	{
+		padding: 100px;
+	}
+
+	.contact-header
+	{
+		text-align: center;
+		font-size: 2rem;
+		font-weight: 600;
+		border-bottom: 5px solid #3c40c6;
+		width: fit-content;
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+
+	.form-container
+	{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 50px;
+	}
+
+	.form-box
+	{
+		padding: 20px 20px;
+	}
+
+	.form-box label
+	{
+		font-size: 1.2rem;
+	}
+
+	.form-responsive
+	{
+		padding: 10px 15px;
+		border: 2px solid #3c40c6;
+		border-radius: 5px;
+		width: 70%;
+		margin-top: 5px;
+		font-size: 1.2rem;
+	}
+
+	.form-box .ta
+	{
+		border: 2px solid #3c40c6;
+		border-radius: 5px;
+		margin-top: 5px;
+		width: 70%;
+		padding: 10px 15px;
+		font-size: 1.2rem;
+	}
+
+	.form-box button
+	{
+		padding: 6px 12px;
+		border: none;
+		background-color: #3c40c6;
+		color: white;
+		cursor: pointer;
+		border-radius: 5px;
+	}
+/* contact page ends */
+
+/* page responsiveness */
+	@media (max-width: 768px)
+	{
+		/* header */
+			.checkbtn
+			{
+				display: block;
+				order: 1;
+			}
+
+			header nav
+			{
+				position: fixed;
+				top: 120px;
+				right: -100%;
+				width: 25%;
+				border-radius: 13px;
+				height: 30vh;
+				display: flex;
+				flex-direction: column;
+				background-color: white;
+				justify-content: center;
+				align-items: flex-end;
+				padding-right: 30px;
+			}
+
+			header nav a
+			{
+				margin: 10px 0;
+			}
+
+			#check:checked ~ nav
+			{
+				right: 0;
+			}
+		/* header ends */
+
+		/* banner */
+			.banner-content
+			{
+				padding: 200px;
+			}
+
+			.banner-content h1
+			{
+				font-size: 3rem;
+			}
+
+			.banner-content h2
+			{
+				font-size: 3rem;
+			}
+		/* banner ends */
+
+		/* why me */
+			.why-me-container
+			{
+				grid-gap: 20px;	
+			}
+		/* why me ends */
+
+		/* team */
+			.team-container
+			{
+				grid-template-columns: repeat(1, 1fr);
+			}
+		/* team ends */
+
+		/* about page */
+			.about
+			{
+				padding: 100px 50px;
+			}
+
+			.mission-container
+			{
+				align-items: flex-start;
+			}
+
+
+			.mission-container img
+			{
+				width: 200px;
+			}
+
+			.vision-container
+			{
+				align-items: flex-start;
+			}
+
+			.vision-container img
+			{
+				width: 200px;
+			}
+		/* about page ends */
+
+		/* executive coaching */
+			.executive-coaching
+			{
+				padding: 100px 50px;
+			}
+
+			.executive-container
+			{
+				align-items: flex-start;
+			}
+
+			.executive-container img
+			{
+				width: 300px;
+			}
+
+			.pre-footer-text
+			{
+				font-size: 2rem;
+			}
+		/* executive coaching ends */
+
+		/* contact page */
+			.contact
+			{
+				padding: 100px 50px;
+			}
+
+			.form-responsive
+			{
+				width: 100%;
+			}
+
+			.form-box .ta
+			{
+				width: 100%;
+			}
+		/* contact page ends */
+	}
+
+	@media (max-width: 425px)
+	{
+		/* header */
+			.checkbtn
+			{
+				margin-right: 20px;
+			}
+
+			.checkbtn i
+			{
+				font-size: 25px;
+			}
+
+			header a .logo img
+			{
+				height: 50px;
+			}
+
+			header a .logo span
+			{
+				font-size: 1.5rem;
+			}
+
+			header nav
+			{
+				width: 50%;
+			}
+		/* header ends */
+
+		/* banner */
+			.banner-content
+			{
+				padding: 180px;
+			}
+
+			.banner-content h1
+			{
+				font-size: 2rem;
+			}
+
+			.banner-content h2
+			{
+				font-size: 2rem;
+			}
+		/* banner ends */
+
+		/* semi banner */
+			.semi-banner
+			{
+				padding: 20px;
+			}
+		/* semi banner ends */
+
+		/* why me */
+			.why-me
+			{
+				padding: 20px;
+			}
+
+			.why-me-container
+			{
+				grid-template-columns: repeat(1, 1fr);
+				grid-gap: 20px;
+			}
+		/* why me ends */
+
+		/* team */
+			.team
+			{
+				padding: 20px;
+			}
+
+			.team-box img
+			{
+				width: 120px;
+			}
+
+			.box-two-text
+			{
+				font-size: 1.8rem;
+				font-weight: 800;
+				text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+			}
+		/* team ends */
+
+		/* footer */
+			.footer
+			{
+				padding: 20px;
+			}
+
+			.footer-container
+			{
+				grid-template-columns: repeat(1, 1fr);
+				grid-gap: 20px;
+			}
+		/* footer ends */
+
+		/* about page */
+			.about
+			{
+				padding: 100px 20px;
+			}
+
+			.mission-container
+			{
+				gap: 20px;
+			}
+
+			.mission-container img
+			{
+				width: 120px;
+			}
+
+			.mission-text span
+			{
+				font-size: 1.5rem;
+			}
+
+			.vision-container
+			{
+				gap: 20px;
+			}
+
+			.vision-container img
+			{
+				width: 120px;
+			}
+
+			.vision-text span
+			{
+				font-size: 1.5rem;
+			}
+		/* about page ends */
+
+		/* executive coaching */
+			.executive-coaching
+			{
+				padding: 100px 20px;
+			}
+
+			.executive-container img
+			{
+				width: 160px;
+			}
+
+			.executive-container-text span
+			{
+				font-size: 1.5rem;
+			}
+
+			.pre-footer-text
+			{
+				font-size: 2rem;
+			}
+		/* executive coaching ends */
+
+		/* contact page */
+			.contact
+			{
+				padding: 100px 20px;
+			}
+
+			.form-container
+			{
+				grid-template-columns: repeat(1, 1fr);
+				grid-gap: 0px;
+			}
+		/* contact page ends */
+	}
+/* page responsiveness ends */

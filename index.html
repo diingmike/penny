@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang = "en" dir = "ltr">
+	<head>
+		<title> Penny </title>
+
+		<meta charset = "UTF-8" />
+		<meta name = "author" content = "Michael Chan" /> <!--date of creation; Mon, August 4, 2025-->
+		<meta http-equiv = "X-UA-Compatible" content = "IE=edge" />
+		<meta name = "viewport" content = "width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+
+		<!--custom css-->
+		<link rel = "stylesheet" href = "css/style.css" />
+
+		<!--bootstrap css-->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+		<!--nav responsiveness css-->
+		<link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+	</head>
+
+	<body style = "background-color: white; color: black;">
+		<!--header-->
+			<section class = "header">
+				<div class = "container">
+					<header>
+						<input type = "checkbox" id = "check">
+						<label for = "check" class = "checkbtn">
+							<i class = "fas fa-bars"></i>
+						</label>
+
+						<a href = "index.html">
+							<div class = "logo">
+								<img src = "images/logo.png" alt = "logo" />
+								<span> Penny's Coaching </span>
+							</div>
+						</a>
+
+						<nav>
+							<a href = "about.html"> About </a>
+							<a href = "executive-coaching.html"> Executive Coaching </a>
+							<a href = "contact.html"> Contact </a>
+						</nav>
+					</header>
+				</div>
+			</section>
+		<!--header ends-->
+
+		<!--banner-->
+			<section class = "banner-container">
+				<div class = "banner active" style = "background-image: url('images/banner-two.jpg');">
+					<div class = "container banner-content">
+						<h1> Executive Coaching for Visionary Startup Founders </h1>
+					</div>
+				</div>
+
+				<div class = "banner" style = "background-image: url('images/banner-two.jpg');">
+					<div class = "container banner-content">
+						<h2> Book for a Personalized Session </h2>
+						<button> Book Session </button>
+					</div>
+				</div>
+			</section>
+		<!--banner ends-->
+
+		<!--semi banner-->
+			<section class = "semi-banner">
+				<div class = "container">
+					<div class = "semi-banner-text">
+						<h1> Scale Your Startup & Your Leadership </h1>
+
+						<p>
+							We combine deep personal development with measurable skill growth in our Intelligent Leadership Executive Coaching.
+							Built to achieve sustainable growth , an aligned culture & a lasting legacy.
+						</p>
+
+						<button> Book a Consultation </button>
+					</div>
+				</div>
+			</section>
+		<!--semi banner ends-->
+
+		<!--why me-->
+			<section class = "why-me">
+				<div class = "container">
+					<h1 class = "why-me-header"> 
+						Why Intelligent Leadership Outperforms Generic Executive Coaching 
+					</h1>
+
+					<div class = "why-me-container">
+						<div class = "why-me-box">
+							<span class = "box-title"> Holistic Leadership Development </span>
+						</div>
+
+						<div class = "why-me-box">
+							<span class = "box-title"> Deep Personalized Executive Coaching </span>
+						</div>
+
+						<div class = "why-me-box">
+							<span class = "box-title"> Structured Roadmap </span>
+						</div>
+
+						<div class = "why-me-box">
+							<span class = "box-title"> Relentless Accountability </span>
+						</div>
+					</div>
+
+					<button class = "why-me-btn"> Schedule Your Consultation </button>
+				</div>
+			</section>
+		<!--why me ends-->
+
+		<!--team-->
+			<section class = "team">
+				<div class = "container">
+					<div class = "team-container">
+						<div class = "team-box">
+							<img src = "images/team/ceo.jpg" alt = "coach img" />
+
+							<div class = "box-one-text">
+								<span class = "name"> Penny </span> <br/>
+								<span class = "desc"> Your Elite Coaching Partner </span>
+							</div>
+						</div>
+
+						<div class = "team-box">
+							<img src = "images/work/start-2.png" />
+
+							<span class = "box-two-text"> Build Your Lasting Legacy <br/> Start Today </span>
+						</div>
+					</div>
+				</div>
+			</section>
+		<!--team ends-->
+
+		<!--footer-->
+			<div class = "footer">
+				<div class = "container">
+					<div class = "footer-container">
+						<div class = "footer-box fb-1">
+							Penny <br/>
+
+							Nairobi , Kenya
+						</div>
+
+						<div class = "footer-box">
+							<h1 class = "footer-title"> Follow </h1>
+
+							<span> 
+								<a href = ""> <img src = "images/work/linkedin.png" /> LinkedIn </a>
+							</span>
+
+							<span> 
+								<a href = ""> <img src = "images/work/x.png" />  X </a> 
+							</span>
+
+							<span> 
+								<a href = ""> <img src = "images/work/facebook.png" /> Facebook </a> 
+							</span>
+
+							<span> 
+								<a href = ""> <img src = "images/work/instagram.png" /> Instagram </a> 
+							</span>
+						</div>
+
+						<div class = "footer-box fb-3">
+							<h1 class = "footer-title"> Contact Penny </h1>
+
+							<span> <img src = "images/work/email.png" /> penny@gmail.com </span>
+							<span> <img src = "images/work/phone.png" /> +254 700 111 222 (9am - 4pm) </span>
+						</div>
+					</div>
+
+					<hr style = "color: white;" />
+
+					<footer>
+						<p style = "margin-top: 10px"> &copy; Penny , <span id = "year"></span> </p>
+					</footer>
+				</div>
+			</div>
+		<!--footer ends-->
+
+		<!--javascript-->
+			<script>
+				const banners = document.querySelectorAll('.banner');
+				let current = 0;
+
+				setInterval(() => {
+					banners[current].classList.remove('active');
+					current = (current + 1) % banners.length;
+					banners[current].classList.add('active');
+				}, 5000); //banner changes every 5 seconds
+
+				document.getElementById("year").textContent = new Date().getFullYear();
+			</script>
+		<!--javascript ends-->
+	</body>
+</html>
