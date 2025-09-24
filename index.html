@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang = "en" dir = "ltr">
 	<head>
-		<title> Penny </title>
+		<title> Opal's Coaching </title>
 
 		<meta charset = "UTF-8" />
 		<meta name = "author" content = "Michael Chan" /> <!--date of creation; Mon, August 4, 2025-->
@@ -18,7 +18,7 @@
 		<link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 	</head>
 
-	<body style = "background-color: white; color: black;">
+	<body style = "background-color: white; color: black; font-size: 1rem; font-family: Calibri;">
 		<!--header-->
 			<section class = "header">
 				<div class = "container">
@@ -31,13 +31,17 @@
 						<a href = "index.html">
 							<div class = "logo">
 								<img src = "images/logo.png" alt = "logo" />
-								<span> Penny's Coaching </span>
+								<span> Opal's Coaching </span>
 							</div>
 						</a>
 
 						<nav>
+							<a href = "index.html"> Home </a>
 							<a href = "about.html"> About </a>
-							<a href = "executive-coaching.html"> Executive Coaching </a>
+							<a href = "executive-coaching.html"> Coaching </a>
+							<a href = "training.html"> Training </a>
+							<a href = "speaking.html"> Speaking </a>
+							<a href = "resources.html"> Resources </a>
 							<a href = "contact.html"> Contact </a>
 						</nav>
 					</header>
@@ -69,7 +73,7 @@
 						<h1> Scale Your Startup & Your Leadership </h1>
 
 						<p>
-							We combine deep personal development with measurable skill growth in our Intelligent Leadership Executive Coaching.
+							Combining deep personal development with measurable skill growth through Intelligent Leadership Executive Coaching.
 							Built to achieve sustainable growth , an aligned culture & a lasting legacy.
 						</p>
 
@@ -114,10 +118,10 @@
 				<div class = "container">
 					<div class = "team-container">
 						<div class = "team-box">
-							<img src = "https://i.ibb.co/DDXyKRxw/ceo.jpg" alt = "ceo" />
+							<img src = "images/team/ceo.jpg" alt = "coach img" />
 
 							<div class = "box-one-text">
-								<span class = "name"> Penny </span> <br/>
+								<span class = "name"> Opal </span> <br/>
 								<span class = "desc"> Your Elite Coaching Partner </span>
 							</div>
 						</div>
@@ -137,35 +141,26 @@
 				<div class = "container">
 					<div class = "footer-container">
 						<div class = "footer-box fb-1">
-							Penny <br/>
+							Opal's Coaching <br/>
 
 							Nairobi , Kenya
 						</div>
 
 						<div class = "footer-box">
-							<h1 class = "footer-title"> Follow </h1>
+							<h1 class = "footer-title"> Follow Me </h1>
 
-							<span> 
-								<a href = ""> <img src = "images/work/linkedin.png" /> LinkedIn </a>
-							</span>
-
-							<span> 
-								<a href = ""> <img src = "images/work/x.png" />  X </a> 
-							</span>
-
-							<span> 
-								<a href = ""> <img src = "images/work/facebook.png" /> Facebook </a> 
-							</span>
-
-							<span> 
-								<a href = ""> <img src = "images/work/instagram.png" /> Instagram </a> 
+							<span class = "socials"> 
+								<a href = ""> <img src = "images/work/linkedin.png" /> </a>
+								<a href = ""> <img src = "images/work/x.png" /> </a> 
+								<a href = ""> <img src = "images/work/facebook.png" /> </a> 
+								<a href = ""> <img src = "images/work/instagram.png" /> </a> 
 							</span>
 						</div>
 
 						<div class = "footer-box fb-3">
-							<h1 class = "footer-title"> Contact Penny </h1>
+							<h1 class = "footer-title"> Contact Me </h1>
 
-							<span> <img src = "images/work/email.png" /> penny@gmail.com </span>
+							<span> <img src = "images/work/email.png" /> opal@gmail.com </span>
 							<span> <img src = "images/work/phone.png" /> +254 700 111 222 (9am - 4pm) </span>
 						</div>
 					</div>
@@ -173,7 +168,7 @@
 					<hr style = "color: white;" />
 
 					<footer>
-						<p style = "margin-top: 10px"> &copy; Penny , <span id = "year"></span> </p>
+						<p style = "margin-top: 10px"> &copy; Opal's Coaching , <span id = "year"></span> </p>
 					</footer>
 				</div>
 			</div>
@@ -193,6 +188,17 @@
 				document.getElementById("year").textContent = new Date().getFullYear();
 			</script>
 		<!--javascript ends-->
-	</body>
 
+		<!--floating whatsapp-->
+			<a href = "https://wa.me/254112579011"
+				class = "whatsapp_float" 
+    			target = "_blank" 
+   				title = "Chat with us on WhatsApp">
+
+   				<img src = "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
+         		alt = "WhatsApp" 
+         		class = "whatsapp_icon">
+			</a>
+		<!--floating whatsapp ends-->
+	</body>
 </html>
